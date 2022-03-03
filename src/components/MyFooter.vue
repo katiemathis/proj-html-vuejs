@@ -33,8 +33,8 @@
         <div class="footer_bottom_container">
             <div class="col-8 m-auto">
                 <div class="row footer_bottom">
-                    <div class="col-9">
-                        Copywrite information
+                    <div class="col-9 m-auto">
+                        <p class="copyright">Copyright 2012 - 2020 | Avada Theme by <a href="#">Theme Fusion</a> | All Rights Reserved | Powered by <a href="https://www.linkedin.com/in/katiepalumbo/">Katie</a></p>
                     </div>
                     <div class="col-3">
                         <div class="row">
@@ -216,6 +216,20 @@ export default {
 .footer_bottom_container {
     height: 50px;
     border-top: 1px solid $colorLightGrey;
+
+    .copyright {
+        color: $colorSilverChalice;
+        font-size: xx-small;
+        
+
+        a {
+            color: $colorNevada;
+            text-decoration: none;
+            &:hover {
+                color: $colorSalmon;
+            }
+        }
+    }
 
     .footer-right {
         li {

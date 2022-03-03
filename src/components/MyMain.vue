@@ -11,6 +11,8 @@
         <ForumsIntroText />
         <ForumSections />
         <CallToAction />
+        
+        <NewsletterSubscribe />
 
     </div>
 </template>
@@ -25,6 +27,7 @@ import ReviewedAndTutorials from './partials/ReviewedAndTutorials.vue'
 import CallToAction from './partials/CallToAction.vue'
 import ForumsIntroText from './partials/ForumsIntroText.vue'
 import ForumSections from './partials/ForumSections.vue'
+import NewsletterSubscribe from './partials/NewsletterSubscribe.vue'
 
 
 export default {
@@ -39,6 +42,7 @@ export default {
         CallToAction,
         ForumsIntroText,
         ForumSections,
+        NewsletterSubscribe
     },
 }
 </script>
