@@ -1,0 +1,21 @@
+$colorEasternBlue: #27aabe;
+$colorShark: #1a1b1b;
+$colorSalmon: #fc8c5e;
+$colorWhite: #fff;
+$colorLightGrey: #f2f2f2;
+
+@mixin li-menu-horizontal {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    vertical-align: center;
+}
+
+@mixin flex-row-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@import '~bootstrap/scss/bootstrap';
