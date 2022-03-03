@@ -1,13 +1,29 @@
 <template>
-  
+    <div class="main-container">
+        <MyJumbotron />
+
+    </div>
 </template>
 
 <script>
-export default {
+import MyJumbotron from './partials/MyJumbotron.vue'
 
+export default {
+    name: 'MyMain',
+    components: {
+        MyJumbotron,
+    },
+
+    data () {
+        return 
+    
+
+    }
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+
+@import '../style/general.scss';
 
 </style>

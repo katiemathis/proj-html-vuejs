@@ -1,8 +1,8 @@
 <template>
 <div class="header-container">
-    <div class="col-10 m-auto">
+    <div class="col-8 m-auto">
         <div class="row">
-            <div class="col-4 justify-content-flex-end logo_container">
+            <div class="col-3 logo_container">
                 <div class="logo">
                     <img alt="Vue logo" src="../assets/images/logo.png">
                 </div>
@@ -19,6 +19,11 @@
                     <button class="btn btn_header">
                         JOIN US
                     </button>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="search_icon">
+                    SEARCH ICON HERE
                 </div>
             </div>
         </div>
@@ -48,14 +53,13 @@ export default {
 @import '../style/general.scss';
 
 .header-container {
-    height: 80px;
+    height: 70px;
     background-color: $colorEasternBlue;
 
     .logo_container {
 
         .logo {
-            width: -1em;
-            margin-top: 10px;
+            margin-top: 20px;
 
         }
 
@@ -65,6 +69,7 @@ export default {
 
     .menu {
     @include flex-row-around;
+    margin-top: 10px;
 
     
         ul {
@@ -88,7 +93,7 @@ export default {
     .btn_header {
         background-color: $colorShark;
         color: $colorWhite;
-        margin-top: 10px;
+        margin-top: 20px;
 
     }
 }
