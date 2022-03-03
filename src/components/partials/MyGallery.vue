@@ -1,6 +1,6 @@
 <template>
   <div class="gallery-container">
-      <div class="col-8 gallery">
+      <div class="col-8 m-auto gallery">
           <div class="row">
               <div class="col article_card">
                   <img src="../../assets/images/post_feat_img_23-147x118.jpg" alt="">
@@ -31,5 +31,28 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../style/general.scss';
+
+.article_card {
+    max-height: 300px;
+    max-width: 400px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h6 {
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 10px;
+        padding-right: 10px;
+        
+    }
+
+}
 
 </style>

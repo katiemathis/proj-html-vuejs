@@ -18,17 +18,27 @@
                 <div class="col-1 m-auto orange_divider"></div>
             </div>
         </div>
+        <MyGallery />
+        <div class="featured_article_container">
+            <div class="col-8 m-auto featured_article_details">
+                
+            </div>
+
+        </div>
+        <MyGallery />
 
     </div>
 </template>
 
 <script>
 import MyJumbotron from './partials/MyJumbotron.vue'
+import MyGallery from './partials/MyGallery.vue'
 
 export default {
     name: 'MyMain',
     components: {
         MyJumbotron,
+        MyGallery,
     },
 }
 </script>
@@ -53,12 +63,13 @@ export default {
     }
 }
 .gallery-intro-text-container {
-    min-height: 250px;
+    min-height: 150px;
 
     .gallery-intro-text {
         color: $colorShark;
         text-align: center;
-        padding: 50px;
+        padding: 40px 0 10px 0;
+        
 
         .all_caps_title {
             @include all-caps-title;
@@ -71,6 +82,20 @@ export default {
         height: 2px;
         background-color: $colorSalmon;
     }
+}
+
+.featured_article_container {
+    height: 400px;
+    margin: 20px 0;
+
+    .featured_article_details{
+        height: 400px;
+        background-image: url('../assets/images/featured_article_1_bg.jpg');
+        background-size: cover;
+
+        
+    }
+    
 }
 
 </style>

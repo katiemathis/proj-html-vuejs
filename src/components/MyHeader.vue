@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-3 logo_container">
                 <div class="logo">
-                    <img alt="Vue logo" src="../assets/images/logo.png">
+                    <img alt="Avada logo" src="../assets/images/logo.png">
                 </div>
             </div>
             <div class="col-6">
