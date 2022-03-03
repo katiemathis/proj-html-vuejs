@@ -1,6 +1,6 @@
 <template>
     <div class="jumbotron-container">
-        <div class="col-6 m-auto">
+        <div class="col-8 m-auto">
             <div class="row jumbotron-contents">
                 <h1>Tech Forum!</h1>
                 <p>Discuss all the latest technology and trends</p>
