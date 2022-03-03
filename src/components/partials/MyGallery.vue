@@ -37,6 +37,7 @@ export default {
     max-height: 300px;
     max-width: 400px;
     overflow: hidden;
+    margin: 10px 0;
 
     img {
         width: 100%;

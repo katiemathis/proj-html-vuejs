@@ -21,9 +21,9 @@
                     </button>
                 </div>
             </div>
-            <div class="col-1">
-                <div class="search_icon">
-                    SEARCH ICON HERE
+            <div class="col-1 justify-content-center align-items-center m-auto">
+                <div class="row search_icon m-auto">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
         </div>
@@ -95,6 +95,11 @@ export default {
         color: $colorWhite;
         margin-top: 20px;
 
+    }
+
+    .fa-magnifying-glass {
+        color: $colorWhite;
+        transform: translateY(60%)
     }
 }
 

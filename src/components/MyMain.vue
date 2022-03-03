@@ -1,44 +1,44 @@
 <template>
     <div class="main-container">
         <MyJumbotron />
-        <div class="top-text-container">
-            <div class="col-6 m-auto">
-                <div class="row top-text">
-                    <h6 class="all_caps_title">avada forum is the place to be</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corrupti a, numquam voluptatum illum, sapiente, commodi sit nostrum obcaecati omnis dolor non ex. Illum eum a temporibus fuga dolores libero!</p>
-                </div>
-            </div>
-        </div>
-        <div class="gallery-intro-text-container">
-            <div class="col-6 m-auto">
-                <div class="row gallery-intro-text">
-                    <h6 class="all_caps_title">phasellus eget metus</h6>
-                    <h3>All the latest news</h3>
-                </div>
-                <div class="col-1 m-auto orange_divider"></div>
-            </div>
-        </div>
+        <TopText />
+        <GalleryIntroText />
         <MyGallery />
-        <div class="featured_article_container">
-            <div class="col-8 m-auto featured_article_details">
-                
-            </div>
-
-        </div>
+        <FeaturedArticle />
         <MyGallery />
+        <ReviewedAndTutorials />
+        <CallToAction />
+        <ForumsIntroText />
+        <ForumSections />
+        <CallToAction />
 
     </div>
 </template>
 
 <script>
 import MyJumbotron from './partials/MyJumbotron.vue'
+import TopText from './partials/TopText.vue'
 import MyGallery from './partials/MyGallery.vue'
+import GalleryIntroText from './partials/GalleryIntroText.vue'
+import FeaturedArticle from './partials/FeaturedArticle.vue'
+import ReviewedAndTutorials from './partials/ReviewedAndTutorials.vue'
+import CallToAction from './partials/CallToAction.vue'
+import ForumsIntroText from './partials/ForumsIntroText.vue'
+import ForumSections from './partials/ForumSections.vue'
+
 
 export default {
     name: 'MyMain',
     components: {
         MyJumbotron,
         MyGallery,
+        TopText,
+        GalleryIntroText,
+        FeaturedArticle,
+        ReviewedAndTutorials,
+        CallToAction,
+        ForumsIntroText,
+        ForumSections,
     },
 }
 </script>
@@ -47,55 +47,7 @@ export default {
 
 @import '../style/general.scss';
 
-.top-text-container {
-    min-height: 250px;
-    background-color: $colorLightGrey;
 
-    .top-text {
-        color: $colorShark;
-        text-align: center;
-        padding: 50px;
 
-        .all_caps_title {
-            @include all-caps-title;
-        }
-
-    }
-}
-.gallery-intro-text-container {
-    min-height: 150px;
-
-    .gallery-intro-text {
-        color: $colorShark;
-        text-align: center;
-        padding: 40px 0 10px 0;
-        
-
-        .all_caps_title {
-            @include all-caps-title;
-        }
-
-    }
-
-    .orange_divider {
-        width: 50px;
-        height: 2px;
-        background-color: $colorSalmon;
-    }
-}
-
-.featured_article_container {
-    height: 400px;
-    margin: 20px 0;
-
-    .featured_article_details{
-        height: 400px;
-        background-image: url('../assets/images/featured_article_1_bg.jpg');
-        background-size: cover;
-
-        
-    }
-    
-}
 
 </style>
