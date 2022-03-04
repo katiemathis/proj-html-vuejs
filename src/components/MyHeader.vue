@@ -10,7 +10,10 @@
             <div class="col-6">
                 <div class="menu">
                     <ul v-for="(navMenuItem, index) in navMenuItems" :key="index">
-                        <li><a href="#" target="_blank" rel="noopener">{{navMenuItem}}</a></li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener">{{navMenuItem}}</a>
+                            <div class="active"></div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -34,16 +37,9 @@
 <script>
 export default {
     name: 'MyHeader',
-
-    data () {
-    return {
-        navMenuItems: ['Home', 'Apple', 
-        'Microsoft', 'Android', 'Forums', 'Contact Us', 
-        ]
+    props: {
+        'navMenuItems': Array,
     }
-        
-
-  }
 
 }
 </script>
@@ -51,6 +47,7 @@ export default {
 <style scoped lang="scss">
 
 @import '../style/general.scss';
+
 
 .header-container {
     height: 70px;
@@ -95,11 +92,24 @@ export default {
                     a {
                         color: $colorSalmon;
                     }
+                    .active {
+                        display: block;
+                    }
                 }
 
                 a{
                     color: $colorWhite;
                     text-decoration: none;
+                }
+                .active {
+                    width: 0;
+                    height: 0;
+                    border: 15px solid transparent;
+                    border-bottom: 0;
+                    border-top: 20px solid $colorEasternBlue;
+                    display: none;
+                    position: absolute;
+                    top: 60px;
                 }
 
                 

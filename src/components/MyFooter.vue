@@ -3,28 +3,29 @@
         <div class="col-8 m-auto">
             <div class="row footer_lists">
                 <div class="col info_text">
-                    <h6 class="all_caps_title">avada tech forum</h6>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    <h6 class="all_caps_footer">avada tech forum</h6>
+                    <p class="footer_text_block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Cumque, illo iste optio atque molestias distinctio, 
                         enim modi tempora asperiores rem voluptate, blanditiis iure! 
                         Ullam fuga earum libero voluptas, dicta excepturi.</p>
                 </div>
                 <div class="col menu_list">
-                    <h6 class="all_caps_title">Popular Topics</h6>
+                    <h6 class="all_caps_footer">Popular Topics</h6>
                     <ul class="menu-col" v-for="(popularTopic, a) in popularTopics" :key="a">
-                        <li><a href="#" target="_blank" rel="noopener">{{popularTopic}}</a></li>
+                        <li><span class="list_decoration"><i class="fa-solid fa-angle-right"></i></span><a href="#" target="_blank" rel="noopener">{{popularTopic}}</a></li>
+                        <!--<li class="hide"><a href="#" target="_blank" rel="noopener">Here is some hidden text. You can only see it if you click on the menu item.</a></li>-->
                     </ul>
                 </div>
                 <div class="col menu_list">
-                    <h6 class="all_caps_title">Recent Topics</h6>
+                    <h6 class="all_caps_footer">Recent Topics</h6>
                     <ul class="menu-col" v-for="(recentTopic, a) in recentTopics" :key="a">
-                        <li><a href="#" target="_blank" rel="noopener">{{recentTopic}}</a></li>
+                        <li><span class="list_decoration"><i class="fa-solid fa-angle-right"></i></span><a href="#" target="_blank" rel="noopener">{{recentTopic}}</a></li>
                     </ul>
                 </div>
                 <div class="col menu_list">
-                    <h6 class="all_caps_title">Latest Replies</h6>
+                    <h6 class="all_caps_footer">Latest Replies</h6>
                     <ul class="menu-col" v-for="(latestReply, a) in latestReplies" :key="a">
-                        <li><a href="#" target="_blank" rel="noopener">{{latestReply}}</a></li>
+                        <li><span class="list_decoration"><i class="fa-solid fa-angle-right"></i></span><a href="#" target="_blank" rel="noopener">{{latestReply}}</a></li>
                     </ul>
                 </div>
 
@@ -34,7 +35,7 @@
             <div class="col-8 m-auto">
                 <div class="row footer_bottom">
                     <div class="col-9 m-auto">
-                        <p class="copyright">Copyright 2012 - 2020 | Avada Theme by <a href="#">Theme Fusion</a> | All Rights Reserved | Powered by <a href="https://www.linkedin.com/in/katiepalumbo/">Katie</a></p>
+                        <p class="copyright"><span><i class="fa-regular fa-copyright copyright_icon"></i></span> Copyright 2012 - 2020 | Avada Theme by <a href="#">Theme Fusion</a> | All Rights Reserved | Powered by <a href="https://www.linkedin.com/in/katiepalumbo/">Katie</a></p>
                     </div>
                     <div class="col-3">
                         <div class="row">
@@ -53,77 +54,19 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <!--<div class="footer-bottom-banner">
-        <div class="footer-left">
-            <button><a href="#" id="button">SIGN UP NOW</a></button>
-        </div>
-        
-    </div>
-  </div>
-</div>-->
 </template>
 
 <script>
 
 export default {
     name: 'MyFooter',
-
-  data () {
+    props: {
+        'popularTopics': Array,
+        'recentTopics': Array,
+        'latestReplies': Array,
+    },
+    data () {
       return {
-          shopBannerItems: [
-              {
-                  text: 'DIGITAL COMICS',
-                  src: '../../img/buy-comics-digital-comics.png',
-              },
-              {
-                  text: 'DC MERCHANDISE',
-                  src: '../../img/buy-comics-merchandise.png',
-              },
-              {
-                  text: 'SUBSCRIPTION',
-                  src: '../../img/buy-comics-subscriptions.png',
-              },
-              {
-                  text: 'COMIC SHOP LOCATOR',
-                  src: '../../img/buy-comics-shop-locator.png',
-              },
-              {
-                  text: 'DC POWER AREA',
-                  src: '../../img/buy-dc-power-visa.svg',
-              },
-
-          ],
-          popularTopics: [
-                'Here is a popular topic for you right here',
-                'Here is another popular topic. Cool, right?',
-                'What about this popular topic. Check it out.',
-                'Last popular topic',
-
-          ],
-          recentTopics: [
-              'This topic is so hot right now.',
-              'Here is another recent topic that you should know about',
-              'Topic - fresh off the presses',
-              'Everyone is talking about this thing right now',
-
-          ],
-          latestReplies: [
-              'This just in - someone replied',
-              'Someone is saying something about this thing',
-              'Someone else is saying something else about this other thing',
-              'The very latest reply',
-          ],
           footerRightItems: [
               {
                   text: 'facebook',
@@ -165,9 +108,12 @@ export default {
     box-sizing: border-box;
 }
 
-.all_caps_title {
-    @include all-caps-title;
-    font-weight: 700;
+/*.hide {
+    display: none;
+}*/
+
+.all_caps_footer {
+    @include all-caps-footer;
 }
 
 .info_text {
@@ -177,6 +123,7 @@ export default {
     }
     p {
         font-size: x-small;
+        color: $colorSilverChalice;
     }   
 
 }
@@ -196,10 +143,24 @@ export default {
             display: block;
             margin: 0 10px;
             font-size: 11px;
-            height: 40px;
-            overflow: hidden;
-            padding-bottom: 10px;
-            border-bottom: 1px solid $colorSilverChalice;
+            min-height: 20px;
+            //overflow: hidden;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $colorLightGrey;
+            &:hover {
+                border-bottom: 1px solid $colorSilverChalice;
+            }
+
+
+            .list_decoration {
+                width: 10px;
+                min-height: 20px;
+                margin-right: 2px;
+                float: left;
+                font-size: 0.8em;
+                font-weight: 400;
+            }
+
 
             a {
                 
@@ -214,6 +175,8 @@ export default {
     }
 }
 
+
+
 .footer_bottom_container {
     height: 50px;
     border-top: 1px solid $colorLightGrey;
@@ -221,6 +184,11 @@ export default {
     .copyright {
         color: $colorSilverChalice;
         font-size: xx-small;
+
+        .copyright_icon {
+            padding-bottom: 2px;
+        }
+
         
 
         a {

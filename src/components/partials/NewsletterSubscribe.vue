@@ -35,11 +35,14 @@ export default {
     name: 'NewsletterSubscribe',
     email: '',
     methods: {
-        subscribe() {
+    subscribe() {
             alert('Thank you! The email address: ' + this.email + 
             ' has been added to our Newsletter mailing list. Please check your email to confirm your subscription.')
 
-        }
+        
+
+        },
+
     }
 
 

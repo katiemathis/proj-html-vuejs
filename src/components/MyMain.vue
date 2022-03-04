@@ -1,5 +1,7 @@
 <template>
     <div class="main-container">
+        <!-- qua sono tutti i componenti parziali ("partials") che hanno tutti lo style individuale 
+        con l'eccezione di MyGallery che per necessità ho dovuto portare un po' di scaffolding e style nel main -->
         <MyJumbotron />
         <TopText />
         <GalleryIntroText />
@@ -32,6 +34,7 @@
 </template>
 
 <script>
+//qua faccio import di tutti i "partials" per costruire la mia pagina
 import MyJumbotron from './partials/MyJumbotron.vue'
 import TopText from './partials/TopText.vue'
 import MyGallery from './partials/MyGallery.vue'
@@ -60,6 +63,9 @@ export default {
         MySlider,
         NewsletterSubscribe
     },
+    /*sotto sono i dati delle gallery -- 
+    facendo in questo modo, posso aggiungere quante altre gallerie che voglio, 
+    cambiando semplicemente l'array di oggetti*/
     data () {
         return {
             cta1: 'Read Our Blog',
@@ -115,6 +121,7 @@ export default {
 
 @import '../style/general.scss';
 
+/*style delle gallery*/
 .gallery-container {
     margin: 10px 0;
     padding: 10px 0;

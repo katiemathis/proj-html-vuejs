@@ -28,6 +28,12 @@ $colorRoyalBlue: #6a5fe1;
     letter-spacing: 3px;
 }
 
+@mixin all-caps-footer {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
 @mixin all-caps-button {
   text-transform: uppercase;
   font-size: 0.8em;
