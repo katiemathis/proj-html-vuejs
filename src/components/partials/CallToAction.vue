@@ -2,7 +2,7 @@
   <div class="cta_container">
       <div class="col-6 m-auto cta_text">
           <div class="row">
-            <h6 class="all_caps_title">call to action</h6>
+            <h6 class="all_caps_title">{{cta}} <span> <i class="fa-solid fa-right-long"></i></span></h6>
           </div>
       </div>
   </div>
@@ -11,6 +11,9 @@
 <script>
 export default {
     name: 'CallToAction',
+    props: {
+        'cta': String  
+    }
 
 }
 </script>
@@ -35,6 +38,10 @@ export default {
             .all_caps_title {
                 @include all-caps-title;
                 line-height: 90px;
+                &:hover {
+                    cursor: pointer;
+                    color: $colorSalmon;
+                }
             }
         }
     }

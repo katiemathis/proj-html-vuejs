@@ -2,10 +2,10 @@
     <div class="jumbotron-container">
         <div class="col-8 m-auto">
             <div class="row jumbotron-contents">
-                <h1>Tech Forum!</h1>
-                <p>Discuss all the latest technology and trends</p>
+                <h1 class="jumbotron_title">Tech Forum!</h1>
+                <p class="jumbotron_subtitle">Discuss all the latest technology news and trends</p>
                 <div class="col">
-                <button class="btn get_avada_button">GET AVADA NOW</button>
+                <button class="get_avada_button">GET AVADA NOW!<span><i class="fa-solid fa-angle-right"></i></span></button>
                 </div>
             </div>
 
@@ -33,12 +33,30 @@ export default {
     .jumbotron-contents {
         color: $colorWhite;
         vertical-align: middle;
-        transform: translateY(80%);
+        transform: translateY(50%);
         font-size: xx-large;
+
+        .jumbotron_title {
+            font-size: 95px;
+            font-weight: 700;
+        }
+
+        .jumbotron_subtitle {
+            font-size: 16px;
+            font-weight: 400;
+        }
         
         .get_avada_button {
             background-color: $colorEasternBlue;
+            border: none;
+            font-size: 12px;
             color: $colorWhite;
+            padding: 10px 30px;
+            font-weight: 700;
+
+            span {
+                padding-left: 10px;
+            }
         }
     }
 }

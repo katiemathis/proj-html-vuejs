@@ -4,17 +4,14 @@
             <div class="row row-cols-4 icon-row g-4">
                 <div class="col section_card" v-for="(section, index) in forumSections" :key="index">
                     <div class="icon">
-                        <i :class= "`${section.prefix}${section.type} ${section.prefix}${section.family}`" class="icon_image"></i>
+                        <i :class= "`${section.prefix}${section.type} ${section.prefix}${section.family}`" 
+                        class="icon_image"></i>
                         <p class="title">{{section.name}}</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-  
 </template>
 
 <script>

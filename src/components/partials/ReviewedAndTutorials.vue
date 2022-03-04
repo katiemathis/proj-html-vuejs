@@ -26,7 +26,7 @@
             </div>
             <div class="row row-3 tutorial_tiles">
                 <div class="col-5">
-                    <img src="../../assets/images/post_feat_img_23-147x118.jpg" alt="">
+                    <img src="../../assets/images/post_feat_img_22-147x118.jpg" alt="">
                 </div>
                 <div class="col-7">
                     <p>Description of reviewed product</p>
@@ -34,7 +34,7 @@
             </div>
             <div class="row tutorial_tiles">
                 <div class="col-5">
-                    <img src="../../assets/images/post_feat_img_23-147x118.jpg" alt="">
+                    <img src="../../assets/images/post_feat_img_20-147x118.jpg" alt="">
                 </div>
                 <div class="col-7">
                     <p>Description of reviewed product</p>
