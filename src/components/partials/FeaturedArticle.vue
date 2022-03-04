@@ -3,7 +3,7 @@
         <div class="col-8 m-auto featured_article_details">
             <div class="row featured_article_text">
                 <h6 class="all_caps_title">featured article</h6>
-                <h1>This is the Featured Article</h1>
+                <h3>This is the Featured Article</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Maxime laborum, nisi autem excepturi sed, numquam sequi voluptate quos iusto, 
                 iure aut aliquam culpa ratione aliquid sapiente magni quisquam. 
@@ -43,8 +43,24 @@ export default {
         .featured_article_text {
             transform: translateY(40%);
 
+            .all_caps_title {
+                @include all_caps_title;
+            }
+            h3 {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 0.7em;
+            }
+
+        }
+
             .all_caps_button {
                 @include all_caps_button;
+                background-color: $colorShark;
+                color: $colorWhite;
+                padding: 10px 30px;
                 &:hover {
                     color: $colorEasternBlue;
                 }
@@ -54,15 +70,9 @@ export default {
 
             }
 
-            .read_more {
-                background-color: $colorShark;
-                color: $colorWhite;
-                padding: 10px 30px;
-            }
-
             
 
-        }
+        
 
         
 

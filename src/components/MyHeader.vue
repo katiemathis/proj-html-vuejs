@@ -112,7 +112,8 @@ export default {
         @include all_caps_button;
         background-color: $colorShark;
         color: $colorWhite;
-        margin-top: 20px;
+        margin-top: 25px;
+        padding: 5px 30px;
         &:hover {
             color: $colorSalmon;
         }
@@ -121,7 +122,7 @@ export default {
 
     .fa-magnifying-glass {
         color: $colorWhite;
-        //transform: translateY(60%);
+        transform: translateY(-60%);
         &:hover {
             cursor: pointer;
             color: $colorSalmon;

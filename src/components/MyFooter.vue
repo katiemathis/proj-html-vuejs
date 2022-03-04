@@ -167,6 +167,7 @@ export default {
 
 .all_caps_title {
     @include all-caps-title;
+    font-weight: 700;
 }
 
 .info_text {

@@ -6,10 +6,12 @@ $colorLightGrey: #f2f2f2;
 $colorSilverChalice: #aeaeae;
 $colorNevada: #62676c;
 $colorSanMarino: #4562b0;
+$colorRoyalBlue: #6a5fe1;
+
 
 @mixin li-menu-horizontal {
     display: inline-block;
-    font-size: 11px;
+    font-size: 1.5em;
     font-weight: 600;
     vertical-align: center;
 }
@@ -21,8 +23,9 @@ $colorSanMarino: #4562b0;
 
 @mixin all-caps-title {
     text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 400;
+    font-size: 0.6em;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 @mixin all-caps-button {
@@ -83,5 +86,5 @@ $colorSanMarino: #4562b0;
   }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&family=Outfit:wght@600&family=Source+Sans+Pro:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&family=Outfit:wght@600&family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
 @import '~bootstrap/scss/bootstrap';

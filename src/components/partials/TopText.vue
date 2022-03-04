@@ -6,7 +6,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Maiores corrupti a, numquam voluptatum illum, sapiente, 
                     commodi sit nostrum obcaecati omnis dolor non ex. 
-                    Illum eum a temporibus fuga dolores libero!</p>
+                    </p>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@ export default {
 @import '../../style/general.scss';
 
 .top-text-container {
-    min-height: 250px;
+    min-height: 200px;
     background-color: $colorLightGrey;
 
     .top-text {

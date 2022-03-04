@@ -26,7 +26,7 @@ export default {
 @import '../../style/general.scss';
 
 .jumbotron-container {
-    min-height: 500px;
+    min-height: 450px;
     background-image: url('../../assets/images/home_slider_bg.jpg');
     background-size: cover;
 

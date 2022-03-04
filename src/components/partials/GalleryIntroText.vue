@@ -35,6 +35,10 @@ export default {
             @include all-caps-title;
         }
 
+        h3 {
+            font-weight: 700;
+        }
+
     }
 
     .orange_divider {

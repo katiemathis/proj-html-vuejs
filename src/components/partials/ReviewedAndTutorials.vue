@@ -20,24 +20,27 @@
                 <div class="col-5">
                     <img src="../../assets/images/post_feat_img_23-147x118.jpg" alt="">
                 </div>
-                <div class="col-7">
-                    <p>Description of reviewed product</p>
+                <div class="col-7 text">
+                    <p class="description_title">Description of tutorial</p>
+                    <p class="description">This is what the product does. This is how it works and how you work it.</p>
                 </div>
             </div>
             <div class="row row-3 tutorial_tiles">
                 <div class="col-5">
                     <img src="../../assets/images/post_feat_img_22-147x118.jpg" alt="">
                 </div>
-                <div class="col-7">
-                    <p>Description of reviewed product</p>
+                <div class="col-7 text">
+                    <p class="description_title">Description of tutorial</p>
+                    <p class="description">This is how you work the product. Follow these instructions carefully to use this item.</p>
                 </div>
             </div>
             <div class="row tutorial_tiles">
                 <div class="col-5">
                     <img src="../../assets/images/post_feat_img_20-147x118.jpg" alt="">
                 </div>
-                <div class="col-7">
-                    <p>Description of reviewed product</p>
+                <div class="col-7 text">
+                    <p class="description_title">Description of reviewed product</p>
+                    <p class="description">Isn't this product just so cool? Look at what it can do and how you can use it to its full potential.</p>
                 </div>
             </div>
         </div>
@@ -62,12 +65,16 @@ export default {
 
     .reviewed_product_container {
         margin: 20px 0;
-        height: 300px;
+        height: 350px;
         background-image: url('../../assets/images/featured_article_2_bg.jpg');
         background-size: cover;
         color: $colorWhite;
         font-size: x-small;
-        padding: 50px;
+        padding: 60px;
+
+        .all_caps_title {
+            @include all-caps-title;
+        }
 
         .all_caps_button {
             @include all-caps-button;
@@ -90,7 +97,7 @@ export default {
 
     .tutorials_container {
         margin: 20px 0;
-        padding: 0 30px;
+        //padding: 0 30px;
 
         .orange_divider {
         width: 50px;
@@ -101,24 +108,37 @@ export default {
 
         .tutorial_tiles {
             max-height: 90px;
-            margin-top: 10px;
-            margin-bottom: 2px;
+            margin: 10px 0 2px 0;
+            overflow: hidden;
 
             
             img {
-                width: 90px;
+                height: 90px;
                 object-fit: cover;
-                padding-bottom: 2px;
+                border-bottom: 2px solid transparent;
                 &:hover {
                     border-bottom: 2px solid $colorEasternBlue;
                     cursor: pointer;
                 }
             }
+            .text {
+                padding-bottom: 10px;
 
-            p {
-                font-size: xx-small;
+                .description_title {
+                    font-size: 0.7em;
+                    font-weight: 600;
+                    padding: 0;
+                    margin: 0;
+                }
 
+                .description {
+                    font-size: 0.7em;
+                    padding: 0;
+                    margin: 0;
+                    
+                }
             }
+
         }
 
     }

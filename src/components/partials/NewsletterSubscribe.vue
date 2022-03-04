@@ -7,9 +7,18 @@
                 </div>
             </div>
             <div class="row submit_bar">
-                <div class="col-10 m-auto">
-                    <input type="text" placeholder="Insert your email*">
-                    <button class="btn all_caps_title">send</button>
+                <div class="col-8 m-auto">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="text" placeholder="Insert your email*" v-model="email" @keyup.enter="subscribe()">
+                        </div>
+                        <div class="col-4">
+                            <button class="all_caps_button" @click="subscribe()">send</button>
+                        </div>
+
+                    </div>
+                    
+                    
                 </div>
 
 
@@ -23,7 +32,15 @@
 
 <script>
 export default {
-    name: 'NewsletterSubscribe'
+    name: 'NewsletterSubscribe',
+    email: '',
+    methods: {
+        subscribe() {
+            alert('Thank you! The email address: ' + this.email + 
+            ' has been added to our Newsletter mailing list. Please check your email to confirm your subscription.')
+
+        }
+    }
 
 
 
@@ -44,20 +61,26 @@ export default {
     }
 
     .submit_bar {
-        margin-top: 20px;
+        
 
         input {
-            width: 350px;
+            width: 100%;
             margin: 10px;
+            border: 0.5px solid #e0dfdf;
+            padding: 5px 10px; 
+            font-size: 0.8em;
         }
 
-        .all_caps_title {
-            @include all_caps_title;
+        .all_caps_button {
+            @include all_caps_button;
             background-color: $colorShark;
             color: $colorWhite;
             padding: 5px 40px;
-            font-size: x-small;
+            //font-size: x-small;
             margin: 10px;
+            &:hover {
+                color: $colorRoyalBlue;
+            }
         }
 
     }
