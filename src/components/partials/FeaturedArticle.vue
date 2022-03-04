@@ -9,7 +9,7 @@
                 iure aut aliquam culpa ratione aliquid sapiente magni quisquam. 
                 Tempora, excepturi.</p>
                 <div class="col-6">
-                    <button class="btn read_more all_caps_title">read more > </button>
+                    <button class="read_more all_caps_button">read more<span><i class="fa-solid fa-angle-right"></i></span></button>
                 </div>
             </div>
             
@@ -43,8 +43,15 @@ export default {
         .featured_article_text {
             transform: translateY(40%);
 
-            .all_caps_title {
-            @include all-caps-title;
+            .all_caps_button {
+                @include all_caps_button;
+                &:hover {
+                    color: $colorEasternBlue;
+                }
+                span {
+                    padding-left: 10px;
+                }
+
             }
 
             .read_more {

@@ -3,8 +3,8 @@
     <div class="col-8 m-auto">
         <div class="row">
             <div class="col-3 logo_container">
-                <div class="logo">
-                    <img alt="Avada logo" src="../assets/images/logo.png">
+                <div class="logo_row">
+                    <img class="logo" alt="Avada logo" src="../assets/images/logo-2x.png">
                 </div>
             </div>
             <div class="col-6">
@@ -16,7 +16,7 @@
             </div>
             <div class="col-2">
                 <div class="button">
-                    <button class="btn btn_header">
+                    <button class="btn_header">
                         JOIN US
                     </button>
                 </div>
@@ -58,9 +58,19 @@ export default {
 
     .logo_container {
 
-        .logo {
-            margin-top: 20px;
+        .logo_row {
+            max-height: 70px;
 
+            .logo {
+                //margin-top: 20px;
+                max-height: 40px;
+                margin-top:15px;
+                object-fit: cover;
+                &:hover {
+                    cursor: pointer;
+                }
+
+            }
         }
 
     }
@@ -79,27 +89,43 @@ export default {
 
             li {
                 @include li-menu-horizontal;
-                a {
+                height: 70px;
+                &:hover {
+                    cursor: pointer;
+                    a {
+                        color: $colorSalmon;
+                    }
+                }
+
+                a{
                     color: $colorWhite;
                     text-decoration: none;
+                }
 
-                    
-              }
+                
             }
             
         }
     }
 
     .btn_header {
+        @include all_caps_button;
         background-color: $colorShark;
         color: $colorWhite;
         margin-top: 20px;
+        &:hover {
+            color: $colorSalmon;
+        }
 
     }
 
     .fa-magnifying-glass {
         color: $colorWhite;
-        transform: translateY(60%)
+        //transform: translateY(60%);
+        &:hover {
+            cursor: pointer;
+            color: $colorSalmon;
+        }
     }
 }
 

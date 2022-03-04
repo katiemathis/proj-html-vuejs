@@ -2,7 +2,11 @@
     <div class="top-text-container">
         <div class="col-6 m-auto">
             <div class="row top-text">
-                <h6 class="all_caps_title">avada forum is the place to be</h6>                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corrupti a, numquam voluptatum illum, sapiente, commodi sit nostrum obcaecati omnis dolor non ex. Illum eum a temporibus fuga dolores libero!</p>
+                <h6 class="all_caps_title">avada forum is the place to be</h6>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Maiores corrupti a, numquam voluptatum illum, sapiente, 
+                    commodi sit nostrum obcaecati omnis dolor non ex. 
+                    Illum eum a temporibus fuga dolores libero!</p>
             </div>
         </div>
     </div>
@@ -31,6 +35,12 @@ export default {
         .all_caps_title {
             @include all-caps-title;
         }
+
+            p {
+                color: $colorNevada;
+                font-weight: 200;
+                font-size: 1.5em;
+            }
 
     }
 }

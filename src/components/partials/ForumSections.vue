@@ -117,6 +117,7 @@ export default {
             background-color: $colorWhite;
             &:hover {
                 cursor: pointer;
+                border-top: solid 2px $colorSalmon;
             }
 
             .icon_image {

@@ -7,7 +7,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Maxime laborum, nisi autem excepturi sed, numquam sequi voluptate quos. </p>
                 <div class="col-6">
-                    <button class="btn read_more all_caps_title">read more > </button>
+                    <button class="read_more all_caps_button">read more<span><i class="fa-solid fa-angle-right"></i></span></button>
                 </div>
 
         </div>
@@ -69,8 +69,15 @@ export default {
         font-size: x-small;
         padding: 50px;
 
-        .all_caps_title {
-            @include all-caps-title;
+        .all_caps_button {
+            @include all-caps-button;
+            &:hover {
+                color: $colorEasternBlue;
+            }
+
+            span {
+                padding-left: 10px;
+            }
         }
 
         .read_more {
@@ -95,10 +102,17 @@ export default {
         .tutorial_tiles {
             max-height: 90px;
             margin-top: 10px;
+            margin-bottom: 2px;
+
             
             img {
                 width: 90px;
                 object-fit: cover;
+                padding-bottom: 2px;
+                &:hover {
+                    border-bottom: 2px solid $colorEasternBlue;
+                    cursor: pointer;
+                }
             }
 
             p {

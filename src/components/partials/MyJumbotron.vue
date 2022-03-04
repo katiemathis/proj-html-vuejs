@@ -47,12 +47,13 @@ export default {
         }
         
         .get_avada_button {
+            @include all_caps_button;
             background-color: $colorEasternBlue;
-            border: none;
             font-size: 12px;
-            color: $colorWhite;
-            padding: 10px 30px;
             font-weight: 700;
+            &:hover {
+                color: $colorSalmon;
+            }
 
             span {
                 padding-left: 10px;

@@ -37,10 +37,15 @@ export default {
 
             .all_caps_title {
                 @include all-caps-title;
+                font-weight: 700;
                 line-height: 90px;
                 &:hover {
                     cursor: pointer;
                     color: $colorSalmon;
+                }
+
+                span {
+                    padding-left: 10px;
                 }
             }
         }

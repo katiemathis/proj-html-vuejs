@@ -2,11 +2,11 @@
     <div class="slider_container">
         <div class="col-4 m-auto">
             <div class="row">
-                <div class="col join_text">
-                    <h1>Hey! Join our Community</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <div class="col join_contents">
+                    <h1 class="join_title">Hey! Join our Community</h1>
+                    <p class="join_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Cumque nemo deleniti voluptatum aliquam libero nobis a ipsam vel repellendus.</p>
-                    <button class="btn all-caps-title">Sign up ></button>
+                    <button class="all-caps-button">Sign up<span><i class="fa-solid fa-angle-right"></i></span></button>
                 </div>
             </div>
         </div>
@@ -33,17 +33,30 @@ export default {
     color: $colorWhite;
     text-align: center;
 
-    .join_text {
+    .join_contents {
         padding: 50px 20px;
 
-        p{
+        .join_title {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+
+        .join_text{
             font-size: small;
         }
 
-        .all-caps-title {
-            @include all-caps-title;
+        .all-caps-button {
+            @include all-caps-button;
             background-color: $colorEasternBlue;
             color: $colorWhite;
+            &:hover {
+                color: $colorSalmon;
+            }
+
+            span {
+                padding-left: 10px;
+            }
         }
 
     }

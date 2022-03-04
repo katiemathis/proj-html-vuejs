@@ -35,15 +35,23 @@ export default {
     overflow: hidden;
     margin: 10px 0;
 
+
     img {
         width: 100%;
         object-fit: cover;
+        padding-bottom: 2px;
+        &:hover {
+            border-bottom: 2px solid $colorEasternBlue;
+            cursor: pointer;
+        }
     }
 
     .article_title {
         font-size: 12px;
         margin-top: 10px;
         font-weight: 600;
+        padding-top: 2px;
+        
     }
 
     .article_date {

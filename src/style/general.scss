@@ -5,6 +5,7 @@ $colorWhite: #fff;
 $colorLightGrey: #f2f2f2;
 $colorSilverChalice: #aeaeae;
 $colorNevada: #62676c;
+$colorSanMarino: #4562b0;
 
 @mixin li-menu-horizontal {
     display: inline-block;
@@ -20,6 +21,18 @@ $colorNevada: #62676c;
 
 @mixin all-caps-title {
     text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+@mixin all-caps-button {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  border: none;
+  color: $colorWhite;
+  padding: 10px 30px;
+
 }
 
 /*scss stolen from my dc comics project*/
