@@ -55,7 +55,7 @@ export default {
     }
 
     .article_title {
-        font-size: 12px;
+        font-size: .9em;
         margin-top: 10px;
         font-weight: 600;
         padding-top: 2px;
@@ -63,13 +63,15 @@ export default {
     }
 
     .article_date {
-        font-size: 10px;
+        font-size: .6em;
         padding-right: 10px; 
+        margin-top: -15px;
     }
 
     .article_preview {
-        font-size: 10px;
+        font-size: .7em;
         padding-right: 10px;
+        margin-top: -10px;
     }
 
 }

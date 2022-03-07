@@ -115,8 +115,8 @@ export default {
 
         .icon {
             border-top: solid 2px $colorEasternBlue;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 175px;
             align-self: center;
             margin: auto;
             justify-content: center;

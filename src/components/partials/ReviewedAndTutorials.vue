@@ -26,8 +26,8 @@
                     <img src="../../assets/images/post_feat_img_23-147x118.jpg" alt="">
                 </div>
                 <div class="col-7 text">
-                    <p class="description_title">Description of tutorial</p>
-                    <p class="description">This is what the product does. This is how it works and how you work it.</p>
+                    <p class="description_title">Here's a cool product</p>
+                    <p class="description"> October 11th, 2015 | Comments Off</p>
                 </div>
             </div>
             <div class="row row-3 tutorial_tiles">
@@ -35,8 +35,8 @@
                     <img src="../../assets/images/post_feat_img_22-147x118.jpg" alt="">
                 </div>
                 <div class="col-7 text">
-                    <p class="description_title">Description of tutorial</p>
-                    <p class="description">This is how you work the product. Follow these instructions carefully to use this item.</p>
+                    <p class="description_title">Here's another cool product. Cool, right?</p>
+                    <p class="description">October 11th, 2015 | Comments Off</p>
                 </div>
             </div>
             <div class="row tutorial_tiles">
@@ -44,8 +44,8 @@
                     <img src="../../assets/images/post_feat_img_20-147x118.jpg" alt="">
                 </div>
                 <div class="col-7 text">
-                    <p class="description_title">Description of reviewed product</p>
-                    <p class="description">Isn't this product just so cool? Look at what it can do and how you can use it to its full potential.</p>
+                    <p class="description_title">This amazing product will change the world</p>
+                    <p class="description">October 11th, 2015 | Comments Off</p>
                 </div>
             </div>
         </div>
@@ -125,6 +125,7 @@ export default {
             
             img {
                 height: 90px;
+                max-width: 110%;
                 object-fit: cover;
                 border-bottom: 2px solid transparent;
                 &:hover {
@@ -136,14 +137,14 @@ export default {
                 padding-bottom: 10px;
 
                 .description_title {
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                     font-weight: 600;
                     padding: 0;
                     margin: 0;
                 }
 
                 .description {
-                    font-size: 0.7em;
+                    font-size: 0.6em;
                     padding: 0;
                     margin: 0;
                     

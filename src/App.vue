@@ -28,6 +28,7 @@ export default {
         navMenuItems: ['Home', 'Apple', 
         'Microsoft', 'Android', 'Forums', 'Contact Us', 
         ],
+        active: 0,
         //dati per footer
         popularTopics: [
                   'Here is a popular topic for you right here',
