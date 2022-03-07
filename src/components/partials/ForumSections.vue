@@ -1,7 +1,10 @@
 <template>
+
+    <!-- inizio forums sections -->
     <div class="forum-sections-container">
         <div class="col-8 m-auto sections_grid m-5">
             <div class="row row-cols-4 icon-row g-4">
+                <!-- i dati vengono popolati in modo dinamico usando un v-for con i dati trovati sotto -->
                 <div class="col section_card" v-for="(section, index) in forumSections" :key="index">
                     <div class="icon">
                         <i :class= "`${section.prefix}${section.type} ${section.prefix}${section.family}`" 
@@ -17,6 +20,7 @@
 <script>
 export default {
     name: 'ForumSections',
+    //qua ci sono i dati usati per popolare i tile sopra
     data() {
         return{
             content: '',
@@ -97,9 +101,13 @@ export default {
 
 @import '../../style/general.scss';
 
+//all forum sections rules
+
 .forum-sections-container {
     background-color: $colorLightGrey;
     padding: 20px 0 50px 0;
+
+    //section card rules
 
     .section_card{
         justify-content: center;

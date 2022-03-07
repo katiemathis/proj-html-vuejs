@@ -1,12 +1,16 @@
 <template>
+<!-- all'interno di header ho il logo (left) e menu di navigazione (right) 
+che viene popolato in modo dinamico dalle props passato da app.vue -->
 <div class="header-container">
     <div class="col-8 m-auto">
         <div class="row">
+            <!-- logo -->
             <div class="col-3 logo_container">
                 <div class="logo_row">
                     <img class="logo" alt="Avada logo" src="../assets/images/logo-2x.png">
                 </div>
             </div>
+            <!-- menu di navigazione dinamico -- i dati si trovano in app.vue -->
             <div class="col-6">
                 <div class="menu">
                     <ul v-for="(navMenuItem, index) in navMenuItems" :key="index">
@@ -17,6 +21,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- button -->
             <div class="col-2">
                 <div class="button">
                     <button class="btn_header">
@@ -24,6 +29,7 @@
                     </button>
                 </div>
             </div>
+            <!-- search icon -->
             <div class="col-1 justify-content-center align-items-center m-auto">
                 <div class="row search_icon m-auto">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -35,6 +41,7 @@
 </template>
 
 <script>
+//sotto vedo le props passate da app.vue che uso per il nav
 export default {
     name: 'MyHeader',
     props: {
@@ -48,10 +55,12 @@ export default {
 
 @import '../style/general.scss';
 
-
+//tutte le regole css
 .header-container {
     height: 70px;
     background-color: $colorEasternBlue;
+
+    //regole logo
 
     .logo_container {
 
@@ -73,6 +82,7 @@ export default {
     }
 
 
+    //regole nav
 
     .menu {
     @include flex-row-around;
@@ -118,6 +128,8 @@ export default {
         }
     }
 
+    //regole button
+
     .btn_header {
         @include all_caps_button;
         background-color: $colorShark;
@@ -129,6 +141,8 @@ export default {
         }
 
     }
+
+    //regole search icon
 
     .fa-magnifying-glass {
         color: $colorWhite;

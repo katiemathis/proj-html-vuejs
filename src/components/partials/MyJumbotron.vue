@@ -1,4 +1,5 @@
 <template>
+    <!-- inizio jumbotron -->
     <div class="jumbotron-container">
         <div class="col-8 m-auto">
             <div class="row jumbotron-contents">
@@ -24,6 +25,8 @@ export default {
 <style scoped lang="scss">
 
 @import '../../style/general.scss';
+
+//all jumbotron rules
 
 .jumbotron-container {
     min-height: 450px;

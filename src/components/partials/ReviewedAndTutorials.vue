@@ -1,6 +1,9 @@
 <template>
+
+  <!-- inizio container per reviews and tutorials -->
   <div class="container reviewed_tutorials_container col-8 m-auto">
       <div class="row">
+        <!-- inizio featured reviewed product -->
         <div class="reviewed_product_container col-8">
             <h6 class="all_caps_title">reviewed product</h6>
                 <h2>This is the Reviewed Product, isn't it cool?</h2>
@@ -11,11 +14,13 @@
                 </div>
 
         </div>
+        <!-- inizio thumbnails per reviews and tutorials -->
         <div class="tutorials_container col-4">
             <div class="row tutorial_title">
                 <h5>Tutorials and Guides</h5>
                 <div class="col-1 orange_divider"></div>
             </div>
+            <!-- thumbnail images + text -->
             <div class="row tutorial_tiles">
                 <div class="col-5">
                     <img src="../../assets/images/post_feat_img_23-147x118.jpg" alt="">
@@ -60,8 +65,12 @@ export default {
 
 @import '../../style/general.scss';
 
+//all reviewed and tutorials rules
+
 .reviewed_tutorials_container {
     margin: 10px;
+
+    //featured product rules
 
     .reviewed_product_container {
         margin: 20px 0;
@@ -94,6 +103,8 @@ export default {
         }
         
     }
+
+    //thumbnail gallery rules 
 
     .tutorials_container {
         margin: 20px 0;

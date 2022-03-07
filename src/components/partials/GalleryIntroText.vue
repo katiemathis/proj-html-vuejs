@@ -1,4 +1,6 @@
 <template>
+    <!-- qua c'è l'intro text per la gallery. Si può riutilizzare questa sezione 
+    usando le props in caso di bisogno di replicare la sezione -->
     <div class="gallery-intro-text-container">
             <div class="col-6 m-auto">
                 <div class="row gallery-intro-text">
@@ -22,6 +24,8 @@ export default {
 
 @import '../../style/general.scss';
 
+//all intro text rules
+
 .gallery-intro-text-container {
     min-height: 150px;
 
@@ -40,6 +44,8 @@ export default {
         }
 
     }
+
+    //accent divider rules
 
     .orange_divider {
         width: 50px;

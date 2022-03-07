@@ -1,4 +1,5 @@
 <template>
+    <!-- inizio top text -->
     <div class="top-text-container">
         <div class="col-6 m-auto">
             <div class="row top-text">
@@ -22,6 +23,8 @@ export default {
 <style scoped lang="scss">
 
 @import '../../style/general.scss';
+
+//top text rules
 
 .top-text-container {
     min-height: 200px;

@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- Header and footer prende i dati da app.vue e non sono composti da partial componenti. 
+    Main è composto da vari partial componenti e contengono dati che vengono poi passati ai rispettivi partials -->
     <MyHeader :navMenuItems="navMenuItems"/>
     <MyMain />
     <MyFooter :popularTopics="popularTopics" :recentTopics="recentTopics" :latestReplies="latestReplies"/>
@@ -7,7 +9,8 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+/*import HelloWorld from './components/HelloWorld.vue' <-- questo componente si trova 
+in "hidden" solo per eventuale riferimento alla documentazione di vue*/
 import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
 import MyFooter from './components/MyFooter.vue'
@@ -15,16 +18,17 @@ import MyFooter from './components/MyFooter.vue'
 export default {
   name: 'App',
   components: {
-    //HelloWorld
     MyHeader,
     MyMain,
     MyFooter
   },
   data () {
     return {
+        //dati per header
         navMenuItems: ['Home', 'Apple', 
         'Microsoft', 'Android', 'Forums', 'Contact Us', 
         ],
+        //dati per footer
         popularTopics: [
                   'Here is a popular topic for you right here',
                   'Here is another popular topic. Cool, right?',
@@ -52,6 +56,8 @@ export default {
 </script>
 
 <style>
+
+/*general rules*/
 
 *{
   margin: 0;

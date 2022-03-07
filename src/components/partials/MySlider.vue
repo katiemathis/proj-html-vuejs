@@ -1,4 +1,5 @@
 <template>
+    <!-- inizio slider -->
     <div class="slider_container">
         <div class="col-4 m-auto">
             <div class="row">
@@ -25,6 +26,8 @@ export default {
 <style scoped lang="scss">
 
 @import '../../style/general.scss';
+
+//all slider rules
 
 .slider_container {
     min-height: 300px;

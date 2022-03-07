@@ -1,4 +1,5 @@
 <template>
+    <!-- qua uso le props da main per poter popolare le due gallerie diverse -->
      <div class="col article_card">
         <img :src="`${item.url}`" :alt="`${item.name}`">
         <p class="article_title">{{item.name}}</p>
@@ -9,6 +10,8 @@
 </template>
 
 <script>
+
+//sotto troviamo le props passate da main
 export default {
     name: 'MyGallery',
     props: {
@@ -23,11 +26,15 @@ export default {
 <style scoped lang="scss">
 @import '../../style/general.scss';
 
+//general rules
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+//article card rules
 
 .article_card {
     max-height: 300px;

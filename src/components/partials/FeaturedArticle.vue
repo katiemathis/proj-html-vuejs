@@ -1,4 +1,5 @@
 <template>
+    <!-- inizio featured article -->
     <div class="featured_article_container">
         <div class="col-8 m-auto featured_article_details">
             <div class="row featured_article_text">
@@ -29,9 +30,13 @@ export default {
 
 @import '../../style/general.scss';
 
+//all featured article rules
+
 .featured_article_container {
     height: 400px;
     margin: 20px 0;
+
+    //text overaly rules
 
     .featured_article_details{
         height: 400px;
@@ -55,7 +60,7 @@ export default {
             }
 
         }
-
+            //button rules
             .all_caps_button {
                 @include all_caps_button;
                 background-color: $colorShark;

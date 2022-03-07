@@ -44,6 +44,11 @@ $colorRoyalBlue: #6a5fe1;
 
 }
 
+@mixin brand-icons {
+  color: #fff;
+  border-radius: 50%;
+}
+
 /*scss stolen from my dc comics project*/
 
 @mixin body-rules {
