@@ -78,7 +78,7 @@ export default {
         background-image: url('../../assets/images/featured_article_2_bg.jpg');
         background-size: cover;
         color: $colorWhite;
-        font-size: x-small;
+        font-size: small;
         padding: 60px;
 
         .all_caps_title {
